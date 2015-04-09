@@ -369,12 +369,17 @@ textarea {
 /*!////////////////////////////////////////////////
 // MODULES
 /////////////////////////////////////////////////*/
+/* Header
+///////////////////////////////////// */
 .header {
   text-align: center; }
 
 .header__top {
   position: relative;
   padding: 20px 0; }
+
+.branding img {
+  max-width: 25em; }
 
 .social__links {
   position: absolute;
@@ -404,6 +409,17 @@ textarea {
       background-color: rgba(255, 255, 255, 0.1); }
     .navigation li:last-of-type:after {
       display: none; }
+
+/* Intro
+///////////////////////////////////// */
+.home__intro {
+  background-color: #fff;
+  padding: 100px 5%;
+  text-align: center; }
+  .home__intro h1 {
+    font-family: "Lora", serif;
+    font-size: 1.75em;
+    color: #6dc9c4; }
 
 /*!////////////////////////////////////////////////
 // STATES

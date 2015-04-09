@@ -19,7 +19,7 @@
 			// Picture element HTML shim|v it for old IE (pairs with Picturefill.js)
 			document.createElement( "picture" );
 		</script>
-        <script src="bower_components/picturefill/dist/picturefill.min.js" async="true"></script>
+        <script async="true" src="bower_components/picturefill/dist/picturefill.js"></script>
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
@@ -54,7 +54,12 @@
 		<div class="hero flexslider">
 			<ul class="slides">
 				<li>
-					<img sizes="(min-width: 800px) 100vw" srcset="img/ice-cream-feature_small.jpg 375w, img/ice-cream-feature_medium.jpg 1000w, img/ice-cream-feature.jpg 2000w">
+
+					<img src="img/ice-cream-feature_small.jpg"
+							srcset="img/ice-cream-feature.jpg 1440w, 
+									img/ice-cream-feature_medium.jpg 960w, 
+									img/ice-cream-feature.jpg 600w" 
+							alt="">
 				</li>
 
 			</ul>
