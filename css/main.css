@@ -366,19 +366,26 @@ textarea {
 /*!////////////////////////////////////////////////
 // THEME
 /////////////////////////////////////////////////*/
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #474747; }
+
 /*!////////////////////////////////////////////////
 // MODULES
 /////////////////////////////////////////////////*/
-/* Header
+/*! Header
 ///////////////////////////////////// */
 .header {
   text-align: center; }
 
 .header__top {
   position: relative;
-  padding: 20px 0; }
+  padding: 20px 5%; }
 
 .branding img {
+  width: 100%;
   max-width: 25em; }
 
 .social__links {
@@ -410,16 +417,89 @@ textarea {
     .navigation li:last-of-type:after {
       display: none; }
 
-/* Intro
+/*! Intro
 ///////////////////////////////////// */
 .home__intro {
   background-color: #fff;
-  padding: 100px 5%;
+  padding: 6.25em 5%;
   text-align: center; }
   .home__intro h1 {
     font-family: "Lora", serif;
     font-size: 1.75em;
     color: #6dc9c4; }
+  .home__intro p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6em;
+    color: #555555;
+    max-width: 56.25em;
+    margin: 0 auto; }
+
+p.intro__products {
+  margin-bottom: 1.25em; }
+  p.intro__products span {
+    margin: 0 10px;
+    position: relative; }
+    p.intro__products span:after {
+      content: '|';
+      position: absolute;
+      right: -16px; }
+    p.intro__products span:last-of-type:after {
+      display: none; }
+
+/*! More Info
+///////////////////////////////////// */
+.more-info {
+  background-image: url("../img/tan-bg.jpg");
+  padding: 3.75em 5%; }
+
+.info__item h2 {
+  display: inline-block;
+  background-color: #6dc9c4;
+  font-family: "Lora", serif;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border-bottom: 3px solid #60b2ad; }
+.info__item a {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #b75860;
+  text-decoration: none;
+  margin-top: 20px; }
+  .info__item a:hover, .info__item a:focus {
+    text-decoration: underline; }
+
+.info__graphic {
+  margin-bottom: -35px; }
+  .info__graphic img {
+    width: 100%; }
+
+/*! Farm Statement
+///////////////////////////////////// */
+.farm__statement {
+  background-image: url("../img/farm-large.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 12.5em 5%; }
+  .farm__statement h2 {
+    max-width: 37.5em;
+    font-family: "Lora", serif;
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0 auto 20px; }
+  .farm__statement p {
+    max-width: 31.25em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto; }
 
 /*!////////////////////////////////////////////////
 // STATES

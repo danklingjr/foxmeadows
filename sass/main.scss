@@ -7,17 +7,18 @@
 // MODULES
 /////////////////////////////////////////////////*/
 
-/* Header
+/*! Header
 ///////////////////////////////////// */
 .header{
 	text-align: center;
 }
 .header__top{
 	position: relative;
-	padding: 20px 0;
+	padding: 20px 5%;
 }
 .branding{
 	img{
+		width: 100%;
 		max-width: em(400px,$font-size);
 	}
 }
@@ -55,18 +56,106 @@
 	}
 }
 
-/* Intro
+/*! Intro
 ///////////////////////////////////// */
 .home__intro{
 	background-color: #fff;
-	padding: 100px 5%;
+	padding: em(100px,$font-size) 5%;
 	text-align: center;
 	h1{
 		font-family: $headline;
 		font-size: em(28px,$font-size);
 		color: $primaryColor;
 	}
+	p{
+		font-family: $body;
+		font-size: em(18px,$font-size);
+		line-height: 1.6em;
+		color: #555555;
+		max-width: em(900px,$font-size);
+		margin: 0 auto;
+	}
 }
+p.intro__products{
+	margin-bottom: em(20px,$font-size);
+	span{
+		margin: 0 10px;
+		position: relative;
+		&:after{
+			content: '|';
+			position: absolute;
+			right: -16px;
+		}
+		&:last-of-type:after{
+			display: none;
+		}
+	}
+}
+
+/*! More Info
+///////////////////////////////////// */
+.more-info{
+	background-image: url('../img/tan-bg.jpg');
+	padding: em(60px,$font-size) 5%;
+}
+.info__item{
+	h2{
+		display: inline-block;
+		background-color: $primaryColor;
+		font-family: $headline;
+		font-size: em(32px,$font-size);
+		color: #fff;
+		margin-bottom: 30px;
+		padding: 10px 20px;
+		border-bottom: 3px solid $color1;
+	}
+	a{
+		display: inline-block;
+		font-family: $body;
+		font-weight: 700;
+		color: $tertiaryColor;
+		text-decoration: none;
+		margin-top: 20px;
+		&:hover,
+		&:focus{
+			text-decoration: underline;
+		}
+	}
+}
+.info__graphic{
+	margin-bottom: -35px;
+	img{
+		width: 100%;
+	}
+}
+
+/*! Farm Statement
+///////////////////////////////////// */
+.farm__statement{
+	background-image: url('../img/farm-large.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: em(200px,$font-size) 5%;
+	h2{
+		max-width: em(600px,$font-size);
+		font-family: $headline;
+		font-size: em(40px,$font-size);
+		color: #fff;
+		margin: 0 auto 20px;
+	}
+	p{
+		max-width: em(500px,$font-size);
+		font-family: $body;
+		font-size: em(24px,$font-size);
+		line-height: 1.2em;
+		color: #fff;
+		text-transform: uppercase;
+		margin: 0 auto;
+	}
+}
+
 
 
 /*!////////////////////////////////////////////////

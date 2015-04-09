@@ -17,3 +17,11 @@ $textColor: #474747; //dark gray
 $headline: 'Lora', serif;
 $body: 'Open Sans', sans-serif;
 $nav: 'Sintony', sans-serif;
+
+// Base Styles
+p{
+	font-family: $body;
+	font-size: em(16px,$font-size);
+	line-height: 1.6em;
+	color: $textColor;
+}

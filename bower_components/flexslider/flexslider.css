@@ -45,6 +45,7 @@
 .flexslider {
   margin: 0;
   padding: 0;
+  max-height: 650px;
   overflow: hidden;
 }
 .flexslider .slides > li {
