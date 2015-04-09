@@ -1,0 +1,42 @@
+/*
+Error: Invalid CSS after "...-width: 640px),": expected media query (e.g. print, screen, print and screen), was "@media screen a..."
+        on line 44 of /Users/Dan/Desktop/Projects/foxmeadows/sass/layout.scss
+
+39:     .grid-flow-opposite{
+40:         float: right;
+41:     }
+42: }
+43: @media screen and (min-width: 640px),
+44: @media screen and (max-height: 650px) {
+45:     .grid-1 { 
+46:         @include gridRow(6, 1.515151515152%);
+47:     }
+48:     .grid-2 {    
+49:         // width: 30.30303030303%;
+
+Backtrace:
+/Users/Dan/Desktop/Projects/foxmeadows/sass/layout.scss:44
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1165:in `expected'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1101:in `expected'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1081:in `expr!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:412:in `media_query_list'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1079:in `expr!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:401:in `media_directive'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:219:in `special_directive'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:194:in `directive'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:660:in `block_child'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:653:in `block_contents'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:42:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:393:in `_to_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:268:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:404:in `run'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...-width: 640px),\": expected media query (e.g. print, screen, print and screen), was \"@media screen a...\"\A         on line 44 of /Users/Dan/Desktop/Projects/foxmeadows/sass/layout.scss\A \A 39:     .grid-flow-opposite{\A 40:         float: right;\A 41:     }\A 42: }\A 43: @media screen and (min-width: 640px),\A 44: @media screen and (max-height: 650px) {\A 45:     .grid-1 { \A 46:         @include gridRow(6, 1.515151515152%);\A 47:     }\A 48:     .grid-2 {    \A 49:         // width: 30.30303030303%;"; }

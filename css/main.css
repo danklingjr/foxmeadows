@@ -189,7 +189,7 @@ textarea {
 
   .grid-flow-opposite {
     float: right; } }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) and (min-height: 650px) {
   .grid-1 {
     width: 15.404040404%; }
     .grid-1:nth-child(n) {
@@ -379,7 +379,7 @@ input {
 /////////////////////////////////////////////////*/
 @media screen and (max-height: 650px) {
   body {
-    font-size: 75%; } }
+    font-size: 65%; } }
 /*! Header
 ///////////////////////////////////// */
 .header {
