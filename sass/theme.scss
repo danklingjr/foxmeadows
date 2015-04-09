@@ -1,8 +1,19 @@
 /*!////////////////////////////////////////////////
 // THEME
 /////////////////////////////////////////////////*/
-$base-font-size: 16px;
+$font-size: 16px;
 @function em($px, $base: $base-font-size){
 	@return ($px / $base) * 1em;
 }
 
+// Color
+$primaryColor: #6dc9c4; //teal
+$secondaryColor: #808080; //gray
+$tertiaryColor: #b75860; //red
+$color1: #60b2ad; //dark teal
+$textColor: #474747; //dark gray
+
+// Typography
+$headline: 'Lora', serif;
+$body: 'Open Sans', sans-serif;
+$nav: 'Sintony', sans-serif;

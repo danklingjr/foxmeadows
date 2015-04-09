@@ -369,6 +369,42 @@ textarea {
 /*!////////////////////////////////////////////////
 // MODULES
 /////////////////////////////////////////////////*/
+.header {
+  text-align: center; }
+
+.header__top {
+  position: relative;
+  padding: 20px 0; }
+
+.social__links {
+  position: absolute;
+  right: 5%;
+  bottom: 10%; }
+
+.navigation {
+  background-color: #808080; }
+  .navigation li {
+    display: inline-block;
+    position: relative; }
+    .navigation li a {
+      display: inline-block;
+      font-family: "Sintony", sans-serif;
+      font-size: 1.25em;
+      color: #fff;
+      text-decoration: none;
+      padding: 20px 30px; }
+    .navigation li:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 2px;
+      height: 20px;
+      margin-top: -10px;
+      background-color: rgba(255, 255, 255, 0.1); }
+    .navigation li:last-of-type:after {
+      display: none; }
+
 /*!////////////////////////////////////////////////
 // STATES
 /////////////////////////////////////////////////*/
