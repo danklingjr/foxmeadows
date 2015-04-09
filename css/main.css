@@ -366,14 +366,16 @@ textarea {
 /*!////////////////////////////////////////////////
 // THEME
 /////////////////////////////////////////////////*/
-p {
+p,
+label,
+input {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   line-height: 1.6em;
   color: #474747; }
 
 /*!////////////////////////////////////////////////
-// MODULES
+// Theme
 /////////////////////////////////////////////////*/
 /*! Header
 ///////////////////////////////////// */
@@ -392,6 +394,19 @@ p {
   position: absolute;
   right: 5%;
   bottom: 10%; }
+  .social__links a {
+    width: 48px;
+    height: 48px;
+    background-color: #6dc9c4;
+    display: inline-block;
+    font-size: 2.25em;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -o-border-radius: 24px;
+    border-radius: 24px;
+    padding: 2px 0 0; }
 
 .navigation {
   background-color: #808080; }
@@ -417,6 +432,37 @@ p {
     .navigation li:last-of-type:after {
       display: none; }
 
+/*! Footer
+///////////////////////////////////// */
+.footer {
+  background-color: #808080;
+  padding: 1.25em 5%; }
+  .footer p {
+    color: #fff; }
+
+.footer__links {
+  text-align: right; }
+  .footer__links a {
+    color: #fff;
+    text-decoration: none; }
+
+.footer__social {
+  margin-left: 20px; }
+  .footer__social a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #6dc9c4;
+    text-align: center;
+    padding: 2px 0 0;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px; }
+
+/*!////////////////////////////////////////////////
+// Home
+/////////////////////////////////////////////////*/
 /*! Intro
 ///////////////////////////////////// */
 .home__intro {
@@ -494,12 +540,53 @@ p.intro__products {
     margin: 0 auto 20px; }
   .farm__statement p {
     max-width: 31.25em;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Sintony", sans-serif;
     font-size: 1.5em;
-    line-height: 1.2em;
+    line-height: 1.4em;
     color: #fff;
     text-transform: uppercase;
     margin: 0 auto; }
+
+/*! Contact Details
+///////////////////////////////////// */
+.contact__details {
+  padding: 3.125em 5%; }
+
+.contact__address a {
+  color: #474747; }
+  .contact__address a:hover, .contact__address a:focus {
+    text-decoration: none; }
+
+.contact__right {
+  text-align: right; }
+  .contact__right p,
+  .contact__right label {
+    text-transform: uppercase; }
+  .contact__right form input {
+    line-height: 1em; }
+  .contact__right form input[type=text],
+  .contact__right form input[type=email] {
+    font-size: 0.6875em;
+    border: 2px solid #6dc9c4;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    margin-left: 20px; }
+  .contact__right form button {
+    background-color: #dddddd;
+    border: none;
+    font-size: 1.25em;
+    color: #fff;
+    padding: 8px 14px 10px;
+    margin-left: 20px;
+    text-align: center; }
+    .contact__right form button i {
+      display: inline-block; }
+
+.contact__hours {
+  margin-bottom: 20px; }
+  .contact__hours span {
+    margin: 0 10px; }
 
 /*!////////////////////////////////////////////////
 // STATES

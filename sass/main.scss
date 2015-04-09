@@ -4,7 +4,7 @@
 @import "theme.scss";
 
 /*!////////////////////////////////////////////////
-// MODULES
+// Theme
 /////////////////////////////////////////////////*/
 
 /*! Header
@@ -26,6 +26,17 @@
 	position: absolute;
 	right: 5%;
 	bottom: 10%;
+	a{
+		width: 48px;
+		height: 48px;
+		background-color: $primaryColor;
+		display: inline-block;
+		font-size: em(36px,$font-size);
+		color: #fff;
+		text-align: center;
+		@include prefix(border-radius, 24px);
+		padding: 2px 0 0;
+	}
 }
 .navigation{
 	background-color: $secondaryColor;
@@ -55,6 +66,40 @@
 		}
 	}
 }
+
+/*! Footer
+///////////////////////////////////// */
+.footer{
+	background-color: $secondaryColor;
+	padding: em(20px,$font-size) 5%;
+	p{
+		color: #fff;
+	}
+}
+.footer__links{
+	text-align: right;
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
+}
+.footer__social{
+	margin-left: 20px;
+	a{
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background-color: $primaryColor;
+		text-align: center;
+		padding: 2px 0 0;
+		@include prefix(border-radius, 15px);
+	}
+}
+
+
+/*!////////////////////////////////////////////////
+// Home
+/////////////////////////////////////////////////*/
 
 /*! Intro
 ///////////////////////////////////// */
@@ -147,12 +192,66 @@ p.intro__products{
 	}
 	p{
 		max-width: em(500px,$font-size);
-		font-family: $body;
+		font-family: $nav;
 		font-size: em(24px,$font-size);
-		line-height: 1.2em;
+		line-height: 1.4em;
 		color: #fff;
 		text-transform: uppercase;
 		margin: 0 auto;
+	}
+}
+
+/*! Contact Details
+///////////////////////////////////// */
+.contact__details{
+	padding: em(50px,$font-size) 5%;
+}
+.contact__address{
+	a{
+		color: $textColor;
+		&:hover,
+		&:focus{
+			text-decoration: none;
+		}
+	}
+}
+.contact__right{
+	text-align: right;
+	p,
+	label{
+		text-transform: uppercase;
+	}
+	form{
+		input{
+			line-height: 1em;
+		}
+		input[type=text],
+		input[type=email]{
+			font-size: em(11px,$font-size);
+			border: 2px solid $primaryColor;
+			padding: 10px;
+			width: 100%;
+			max-width: 200px;
+			margin-left: 20px;
+		}
+		button{
+			background-color: #dddddd;
+			border: none;
+			font-size: em(20px,$font-size);
+			color: #fff;
+  			padding: 8px 14px 10px;
+  			margin-left: 20px;
+  			text-align: center;
+  			i{
+  				display: inline-block;
+  			}
+		}
+	}
+}
+.contact__hours{
+	margin-bottom: 20px;
+	span{
+		margin: 0 10px;
 	}
 }
 

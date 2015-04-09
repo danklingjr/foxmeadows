@@ -19,7 +19,9 @@ $body: 'Open Sans', sans-serif;
 $nav: 'Sintony', sans-serif;
 
 // Base Styles
-p{
+p,
+label,
+input{
 	font-family: $body;
 	font-size: em(16px,$font-size);
 	line-height: 1.6em;
