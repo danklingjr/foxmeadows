@@ -17,9 +17,12 @@
 	padding: 20px 5%;
 }
 .branding{
+	font-family: $headline;
+	font-size: em(36px,$font-size);
+	color: $primaryColor;
 	img{
 		width: 100%;
-		max-width: em(400px,$font-size);
+		max-width: 400px;
 	}
 }
 .social__links{
@@ -50,6 +53,14 @@
 			color: #fff;
 			text-decoration: none;
 			padding: 20px 30px;
+			@include prefix(transition, 0.2s ease-in-out);
+			i{
+				margin-left: 15px;
+			}
+			&:hover,
+			&:focus{
+				background-color: $primaryColor;
+			}
 		}
 		&:after{
 			content: '';

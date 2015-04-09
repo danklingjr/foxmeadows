@@ -386,9 +386,13 @@ input {
   position: relative;
   padding: 20px 5%; }
 
-.branding img {
-  width: 100%;
-  max-width: 25em; }
+.branding {
+  font-family: "Lora", serif;
+  font-size: 2.25em;
+  color: #6dc9c4; }
+  .branding img {
+    width: 100%;
+    max-width: 400px; }
 
 .social__links {
   position: absolute;
@@ -419,7 +423,15 @@ input {
       font-size: 1.25em;
       color: #fff;
       text-decoration: none;
-      padding: 20px 30px; }
+      padding: 20px 30px;
+      -webkit-transition: 0.2s ease-in-out;
+      -moz-transition: 0.2s ease-in-out;
+      -o-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+      .navigation li a i {
+        margin-left: 15px; }
+      .navigation li a:hover, .navigation li a:focus {
+        background-color: #6dc9c4; }
     .navigation li:after {
       content: '';
       position: absolute;
