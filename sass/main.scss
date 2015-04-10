@@ -56,7 +56,11 @@
 	li{
 		display: inline-block;
 		position: relative;
+		z-index: 4;
+		@include prefix(transition, 0.2s ease-in-out);
 		a{
+			position: relative;
+			z-index: 4;
 			display: inline-block;
 			font-family: $nav;
 			font-size: em(20px,$font-size);
@@ -84,6 +88,43 @@
 		}
 		&:last-of-type:after{
 			display: none;
+		}
+	}
+}
+.dropdown{
+	height: 0;
+	overflow: hidden;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	z-index: 3;
+	opacity: 0;
+	@include prefix(transition, 0.2s ease-in-out);
+	li{
+		display: block;
+		a{
+			width: 250px;
+			font-size: em(16px,$font-size);
+			color: $secondaryColor;
+			text-align: left;
+			padding: 15px 20px;
+			border-top: 2px solid transparentize($secondaryColor, 0.9);
+			&:hover,
+			&:focus{
+				color: #fff;
+			}
+		}
+		&:after{
+			display: none;
+		}
+	}
+}
+.navigation{
+	li:hover,
+	li:focus{
+		.dropdown{
+			height: auto;
+			opacity: 1;
 		}
 	}
 }

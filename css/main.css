@@ -425,8 +425,15 @@ input {
   background-color: #808080; }
   .navigation li {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    z-index: 4;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
     .navigation li a {
+      position: relative;
+      z-index: 4;
       display: inline-block;
       font-family: "Sintony", sans-serif;
       font-size: 1.25em;
@@ -452,6 +459,37 @@ input {
       background-color: rgba(255, 255, 255, 0.1); }
     .navigation li:last-of-type:after {
       display: none; }
+
+.dropdown {
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+  .dropdown li {
+    display: block; }
+    .dropdown li a {
+      width: 250px;
+      font-size: 1em;
+      color: #808080;
+      text-align: left;
+      padding: 15px 20px;
+      border-top: 2px solid rgba(128, 128, 128, 0.1); }
+      .dropdown li a:hover, .dropdown li a:focus {
+        color: #fff; }
+    .dropdown li:after {
+      display: none; }
+
+.navigation li:hover .dropdown,
+.navigation li:focus .dropdown {
+  height: auto;
+  opacity: 1; }
 
 /*! Footer
 ///////////////////////////////////// */
