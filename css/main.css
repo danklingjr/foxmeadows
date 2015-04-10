@@ -377,7 +377,7 @@ input {
 /*!////////////////////////////////////////////////
 // Theme
 /////////////////////////////////////////////////*/
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 450px) {
   body {
     font-size: 65%; } }
 /*! Header
@@ -400,7 +400,7 @@ input {
 .social__links {
   position: absolute;
   right: 5%;
-  bottom: 10%; }
+  top: 10%; }
   .social__links a {
     width: 48px;
     height: 48px;
@@ -420,9 +420,14 @@ input {
     padding: 2px 0 0; }
     .social__links a:hover, .social__links a:focus {
       background-color: #3faaa5; }
+  @media screen and (min-width: 700px) {
+    .social__links {
+      bottom: 10%;
+      top: auto; } }
 
 .navigation {
-  background-color: #808080; }
+  background-color: #808080;
+  display: none; }
   .navigation li {
     display: inline-block;
     position: relative;
@@ -436,10 +441,10 @@ input {
       z-index: 4;
       display: inline-block;
       font-family: "Sintony", sans-serif;
-      font-size: 1.25em;
+      font-size: 1em;
       color: #fff;
       text-decoration: none;
-      padding: 20px 30px;
+      padding: 20px 10px;
       -webkit-transition: 0.2s ease-in-out;
       -moz-transition: 0.2s ease-in-out;
       -o-transition: 0.2s ease-in-out;
@@ -448,6 +453,12 @@ input {
         margin-left: 15px; }
       .navigation li a:hover, .navigation li a:focus {
         background-color: #6dc9c4; }
+      @media screen and (min-width: 850px) {
+        .navigation li a {
+          padding: 20px 30px;
+          font-size: 1.25em; } }
+    .navigation li:hover > a, .navigation li:focus > a {
+      background-color: #6dc9c4; }
     .navigation li:after {
       content: '';
       position: absolute;
@@ -459,6 +470,9 @@ input {
       background-color: rgba(255, 255, 255, 0.1); }
     .navigation li:last-of-type:after {
       display: none; }
+  @media screen and (min-width: 600px) {
+    .navigation {
+      display: block; } }
 
 .dropdown {
   height: 0;
@@ -490,6 +504,47 @@ input {
 .navigation li:focus .dropdown {
   height: auto;
   opacity: 1; }
+
+.mobile__button {
+  display: block;
+  background-color: #808080;
+  font-family: "Sintony", sans-serif;
+  font-size: 1.25em;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 30px; }
+  @media screen and (min-width: 600px) {
+    .mobile__button {
+      display: none; } }
+
+.mobile__nav {
+  display: none; }
+  .mobile__nav li {
+    display: block; }
+    .mobile__nav li:after {
+      content: '';
+      display: none; }
+    .mobile__nav li a {
+      width: 100%; }
+      .mobile__nav li a:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, 0.1); }
+  .mobile__nav .dropdown {
+    display: none;
+    position: relative;
+    height: auto;
+    opacity: 1; }
+    .mobile__nav .dropdown li a {
+      text-align: center; }
+  @media screen and (min-width: 600px) {
+    .mobile__nav {
+      display: none !important; } }
 
 /*! Footer
 ///////////////////////////////////// */

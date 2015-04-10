@@ -6,7 +6,7 @@
 /*!////////////////////////////////////////////////
 // Theme
 /////////////////////////////////////////////////*/
-@media screen and (max-height: 650px){
+@media screen and (max-height: 450px){
 	body{
 		font-size: 65%;
 	}
@@ -29,11 +29,14 @@
 		width: 100%;
 		max-width: 400px;
 	}
+	@media screen and (min-width: 700px){
+
+	}
 }
 .social__links{
 	position: absolute;
 	right: 5%;
-	bottom: 10%;
+	top: 10%;
 	a{
 		width: 48px;
 		height: 48px;
@@ -50,9 +53,14 @@
 			background-color: darken($primaryColor,15);
 		}
 	}
+	@media screen and (min-width: 700px){
+		bottom: 10%;
+		top: auto;
+	}
 }
 .navigation{
 	background-color: $secondaryColor;
+	display: none;
 	li{
 		display: inline-block;
 		position: relative;
@@ -63,10 +71,10 @@
 			z-index: 4;
 			display: inline-block;
 			font-family: $nav;
-			font-size: em(20px,$font-size);
+			font-size: em(16px,$font-size);
 			color: #fff;
 			text-decoration: none;
-			padding: 20px 30px;
+			padding: 20px 10px;
 			@include prefix(transition, 0.2s ease-in-out);
 			i{
 				margin-left: 15px;
@@ -75,6 +83,14 @@
 			&:focus{
 				background-color: $primaryColor;
 			}
+			@media screen and (min-width: 850px){
+				padding: 20px 30px;
+				font-size: em(20px,$font-size);
+			}
+		}
+		&:hover > a,
+		&:focus > a{
+			background-color: $primaryColor;
 		}
 		&:after{
 			content: '';
@@ -89,6 +105,9 @@
 		&:last-of-type:after{
 			display: none;
 		}
+	}
+	@media screen and (min-width: 600px){
+		display: block;
 	}
 }
 .dropdown{
@@ -113,6 +132,7 @@
 			&:focus{
 				color: #fff;
 			}
+			
 		}
 		&:after{
 			display: none;
@@ -126,6 +146,55 @@
 			height: auto;
 			opacity: 1;
 		}
+	}
+}
+.mobile__button{
+	display: block;
+	background-color: $secondaryColor;
+	font-family: $nav;
+	font-size: em(20px,$font-size);
+	color: #fff;
+	text-decoration: none;
+	padding: 20px 30px;
+	@media screen and (min-width: 600px){
+		display: none;
+	}
+}
+.mobile__nav{
+	display: none;
+	li{
+		display: block;
+		&:after{
+			content: '';
+			display:none;
+		}
+		a{
+			width: 100%;
+			&:after{
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 100%;
+				height: 2px;
+				margin-top: 0;
+				background-color: transparentize(#fff, 0.9);
+			}
+		}
+	}
+	.dropdown{
+		display: none;
+		position: relative;
+		height: auto;
+		opacity: 1;
+		li{
+			a{
+				text-align: center;
+			}
+		}
+	}
+	@media screen and (min-width: 600px){
+		display: none !important;
 	}
 }
 
