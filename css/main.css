@@ -374,6 +374,17 @@ input {
   line-height: 1.6em;
   color: #474747; }
 
+.button {
+  display: inline-block;
+  background-color: #6dc9c4;
+  font-family: "Lora", serif;
+  font-size: 1.125em;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px; }
+  .button i {
+    margin-left: 10px; }
+
 /*!////////////////////////////////////////////////
 // Theme
 /////////////////////////////////////////////////*/
@@ -619,7 +630,7 @@ p.intro__products {
   background-image: url("../img/tan-bg.jpg");
   padding: 3.75em 5%; }
 
-.info__item h2 {
+.info__item h2, .menu__item h2 {
   display: inline-block;
   background-color: #6dc9c4;
   font-family: "Lora", serif;
@@ -628,14 +639,14 @@ p.intro__products {
   margin-bottom: 30px;
   padding: 10px 20px;
   border-bottom: 3px solid #60b2ad; }
-.info__item a {
+.info__item a, .menu__item a {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #b75860;
   text-decoration: none;
   margin-top: 20px; }
-  .info__item a:hover, .info__item a:focus {
+  .info__item a:hover, .menu__item a:hover, .info__item a:focus, .menu__item a:focus {
     text-decoration: underline; }
 
 .info__graphic {
@@ -709,8 +720,135 @@ p.intro__products {
     margin: 0 10px; }
 
 /*!////////////////////////////////////////////////
-// STATES
+// SUB PAGE
 /////////////////////////////////////////////////*/
+.hero--page {
+  position: relative;
+  height: 430px;
+  background-image: url(../img/page-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero--page h1 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    font-family: "Lora", serif;
+    font-size: 2.375em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -30px; }
+
+.page__intro,
+.content__left {
+  background-color: #fff;
+  padding: 6.25em 5%;
+  text-align: left; }
+  .page__intro img,
+  .content__left img {
+    width: 100%; }
+  .page__intro h2,
+  .content__left h2 {
+    font-family: "Lora", serif;
+    font-size: 1.75em;
+    color: #474747;
+    margin-bottom: 20px; }
+  .page__intro p,
+  .content__left p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6em;
+    color: #555555;
+    max-width: 56.25em;
+    margin: 0 auto; }
+  .page__intro .button,
+  .content__left .button {
+    margin-top: 40px; }
+
+.content__left {
+  background-image: url("../img/tan-bg.jpg"); }
+  .content__left .content__detail {
+    padding: 0; }
+    @media screen and (min-width: 640px) {
+      .content__left .content__detail {
+        padding: 0 5% 0 0; } }
+
+.content__right .intro__detail {
+  padding: 0; }
+  @media screen and (min-width: 640px) {
+    .content__right .intro__detail {
+      padding: 0 0 0 5%; } }
+
+.signature__treats {
+  background-color: #fff;
+  padding: 6.25em 5%;
+  text-align: center; }
+  .signature__treats h2 {
+    font-family: "Lora", serif;
+    font-size: 1.75em;
+    color: #6dc9c4;
+    margin-bottom: 20px; }
+  .signature__treats p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6em;
+    color: #555555;
+    max-width: 43.75em;
+    margin: 0 auto; }
+
+/*! Menu
+///////////////////////////////////// */
+.menu {
+  background-color: #dfdddb;
+  padding: 3.125em 5%; }
+
+.menu__wrap {
+  height: auto;
+  display: table; }
+
+.menu__item {
+  display: table-cell;
+  background-color: #fff; }
+  .menu__item p {
+    padding: 0 10% 40px; }
+
+.menu__feature {
+  background-color: #fff;
+  padding: 20px; }
+
+.feature__info {
+  padding: 0 5%; }
+  .feature__info h2 {
+    font-family: "Lora", serif;
+    font-size: 1.75em;
+    color: #474747;
+    text-align: center;
+    margin-bottom: 20px; }
+  .feature__info .grid-half {
+    text-align: center; }
+    .feature__info .grid-half p {
+      margin-top: 30px; }
+  .feature__info p, .feature__info li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125em; }
+  .feature__info p {
+    text-align: center; }
+  .feature__info ul {
+    width: 200px;
+    text-align: left;
+    margin-left: 110px; }
+
+.menu__graphic img {
+  margin-bottom: -40px; }
+.menu__graphic p {
+  display: inline-block;
+  background-color: #6dc9c4;
+  font-family: "Lora", serif;
+  font-size: 2em;
+  color: #fff;
+  padding: 10px 20px;
+  border-bottom: 3px solid #60b2ad; }
+
 /*! ==========================================================================
 // Media Queries
 // =========================================================================*/

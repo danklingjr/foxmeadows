@@ -393,10 +393,161 @@ p.intro__products{
 
 
 
-/*!////////////////////////////////////////////////
-// STATES
-/////////////////////////////////////////////////*/
 
+/*!////////////////////////////////////////////////
+// SUB PAGE
+/////////////////////////////////////////////////*/
+.hero--page{
+	position: relative;
+	height: 430px;
+	background-image: url(../img/page-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	h1{
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		font-family: $headline;
+		font-size: em(38px,$font-size);
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: -30px;
+	}
+}
+.page__intro,
+.content__left{
+	background-color: #fff;
+	padding: em(100px,$font-size) 5%;
+	text-align: left;
+	img{
+		width: 100%;
+	}
+	h2{
+		font-family: $headline;
+		font-size: em(28px,$font-size);
+		color: $textColor;
+		margin-bottom: 20px;
+	}
+	p{
+		font-family: $body;
+		font-size: em(18px,$font-size);
+		line-height: 1.6em;
+		color: #555555;
+		max-width: em(900px,$font-size);
+		margin: 0 auto;
+	}
+	.button{
+		margin-top: 40px;
+	}
+}
+.content__left{
+	background-image: url('../img/tan-bg.jpg');
+	.content__detail{
+		padding: 0;
+		@media screen and (min-width: 640px){
+			padding: 0 5% 0 0;
+		}
+	}
+}
+.content__right{
+	.intro__detail{
+		padding: 0;
+		@media screen and (min-width: 640px){
+			padding: 0 0 0 5%;
+		}
+	}
+}
+
+.signature__treats{
+	background-color: #fff;
+	padding: em(100px,$font-size) 5%;
+	text-align: center;
+	h2{
+		font-family: $headline;
+		font-size: em(28px,$font-size);
+		color: $primaryColor;
+		margin-bottom: 20px;
+	}
+	p{
+		font-family: $body;
+		font-size: em(18px,$font-size);
+		line-height: 1.6em;
+		color: #555555;
+		max-width: em(700px,$font-size);
+		margin: 0 auto;
+	}
+}
+
+/*! Menu
+///////////////////////////////////// */
+.menu{
+	background-color: #dfdddb;
+	padding: em(50px,$font-size) 5%;
+}
+
+.menu__wrap{
+	height: auto;
+	display: table;
+
+}
+.menu__item{
+	@extend .info__item;
+}
+.menu__item{
+	display: table-cell;
+	
+	background-color: #fff;
+	p{
+		padding: 0 10% 40px;
+	}
+}
+.menu__feature{
+	background-color: #fff;
+	padding: 20px;
+}
+.feature__info{
+	padding: 0 5%;
+	h2{
+		font-family: $headline;
+		font-size: em(28px,$font-size);
+		color: $textColor;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.grid-half{
+		text-align: center;
+		p{
+			margin-top: 30px;
+		}
+	}
+	p,li{
+		font-family: $body;
+		font-size: em(18px,$font-size);
+	}
+	p{
+		text-align: center;
+	}
+	ul{
+		width: 200px;
+		text-align: left;
+		margin-left: 110px;
+	}
+}
+.menu__graphic{
+	img{
+		margin-bottom: -40px;
+	}
+	p{
+		display: inline-block;
+		background-color: $primaryColor;
+		font-family: $headline;
+		font-size: em(32px,$font-size);
+		color: #fff;
+		padding: 10px 20px;
+		border-bottom: 3px solid $color1;
+	}
+}
 
 
 @import "shame.scss";

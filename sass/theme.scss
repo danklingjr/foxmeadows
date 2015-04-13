@@ -28,3 +28,16 @@ input{
 	line-height: 1.6em;
 	color: $textColor;
 }
+
+.button{
+	display: inline-block;
+	background-color: $primaryColor;
+	font-family: $headline;
+	font-size: em(18px,$font-size);
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	i{
+		margin-left: 10px;
+	}
+}
