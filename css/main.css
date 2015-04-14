@@ -564,6 +564,9 @@ input {
   padding: 1.25em 5%; }
   .footer p {
     color: #fff; }
+  @media screen and (min-width: 1440px) {
+    .footer {
+      padding: 1.25em 10%; } }
 
 .footer__links {
   text-align: right; }
@@ -629,6 +632,9 @@ p.intro__products {
 .more-info {
   background-image: url("../img/tan-bg.jpg");
   padding: 3.75em 5%; }
+  @media screen and (min-width: 1440px) {
+    .more-info {
+      padding: 3.75em 10%; } }
 
 .info__item h2, .menu__item h2 {
   display: inline-block;
@@ -682,6 +688,9 @@ p.intro__products {
 ///////////////////////////////////// */
 .contact__details {
   padding: 3.125em 5%; }
+  @media screen and (min-width: 1440px) {
+    .contact__details {
+      padding: 3.125em 10%; } }
 
 .contact__address a {
   color: #474747; }
@@ -724,8 +733,9 @@ p.intro__products {
 /////////////////////////////////////////////////*/
 .hero--page {
   position: relative;
-  height: 430px;
+  height: 250px;
   background-image: url(../img/page-bg.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
   .hero--page h1 {
@@ -738,6 +748,9 @@ p.intro__products {
     text-align: center;
     text-transform: uppercase;
     margin-top: -30px; }
+  @media screen and (min-width: 600px) {
+    .hero--page {
+      height: 430px; } }
 
 .page__intro,
 .content__left {
@@ -746,7 +759,7 @@ p.intro__products {
   text-align: left; }
   .page__intro img,
   .content__left img {
-    width: 100%; }
+    max-width: 100%; }
   .page__intro h2,
   .content__left h2 {
     font-family: "Lora", serif;
@@ -764,6 +777,10 @@ p.intro__products {
   .page__intro .button,
   .content__left .button {
     margin-top: 40px; }
+  @media screen and (min-width: 1440px) {
+    .page__intro,
+    .content__left {
+      padding: 6.25em 10%; } }
 
 .content__left {
   background-image: url("../img/tan-bg.jpg"); }
@@ -772,6 +789,11 @@ p.intro__products {
     @media screen and (min-width: 640px) {
       .content__left .content__detail {
         padding: 0 5% 0 0; } }
+  .content__left .detail--left {
+    padding: 0; }
+    @media screen and (min-width: 640px) {
+      .content__left .detail--left {
+        padding: 0 5%; } }
 
 .content__right .intro__detail {
   padding: 0; }
@@ -801,6 +823,9 @@ p.intro__products {
 .menu {
   background-color: #dfdddb;
   padding: 3.125em 5%; }
+  @media screen and (min-width: 1440px) {
+    .menu {
+      padding: 3.125em 10%; } }
 
 .menu__wrap {
   height: auto;
@@ -817,7 +842,7 @@ p.intro__products {
   padding: 20px; }
 
 .feature__info {
-  padding: 0 5%; }
+  padding: 20px 5%; }
   .feature__info h2 {
     font-family: "Lora", serif;
     font-size: 1.75em;
@@ -830,15 +855,19 @@ p.intro__products {
       margin-top: 30px; }
   .feature__info p, .feature__info li {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.125em; }
+    font-size: 1.125em;
+    color: #474747; }
+  .feature__info li {
+    margin-bottom: 10px; }
   .feature__info p {
     text-align: center; }
   .feature__info ul {
     width: 200px;
     text-align: left;
-    margin-left: 110px; }
+    margin-left: 30px; }
 
 .menu__graphic img {
+  max-width: 100%;
   margin-bottom: -40px; }
 .menu__graphic p {
   display: inline-block;
@@ -848,6 +877,32 @@ p.intro__products {
   color: #fff;
   padding: 10px 20px;
   border-bottom: 3px solid #60b2ad; }
+
+.feature__points {
+  padding: 0 0 0 60px; }
+  .feature__points p {
+    position: relative;
+    text-align: left; }
+    .feature__points p:before {
+      content: '';
+      background-color: #6dc9c4;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: -50px;
+      font-family: "Lora", serif;
+      font-size: 1.75em;
+      color: #fff;
+      text-align: center;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -o-border-radius: 20px;
+      border-radius: 20px;
+      padding-top: 5px; }
+  .feature__points:nth-of-type(1) p:before {
+    content: '1'; }
+  .feature__points:nth-of-type(2) p:before {
+    content: '2'; }
 
 /*! ==========================================================================
 // Media Queries

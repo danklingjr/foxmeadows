@@ -206,6 +206,9 @@
 	p{
 		color: #fff;
 	}
+	@media screen and (min-width: 1440px){
+		padding: em(20px,$font-size) 10%;
+	}
 }
 .footer__links{
 	text-align: right;
@@ -278,6 +281,9 @@ p.intro__products{
 .more-info{
 	background-image: url('../img/tan-bg.jpg');
 	padding: em(60px,$font-size) 5%;
+	@media screen and (min-width: 1440px){
+		padding: em(60px,$font-size) 10%;
+	}
 }
 .info__item{
 	h2{
@@ -341,6 +347,9 @@ p.intro__products{
 ///////////////////////////////////// */
 .contact__details{
 	padding: em(50px,$font-size) 5%;
+	@media screen and (min-width: 1440px){
+		padding: em(50px,$font-size) 10%;
+	}
 }
 .contact__address{
 	a{
@@ -399,8 +408,9 @@ p.intro__products{
 /////////////////////////////////////////////////*/
 .hero--page{
 	position: relative;
-	height: 430px;
+	height: 250px;
 	background-image: url(../img/page-bg.jpg);
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	h1{
@@ -414,6 +424,9 @@ p.intro__products{
 		text-transform: uppercase;
 		margin-top: -30px;
 	}
+	@media screen and (min-width: 600px){
+		height: 430px;
+	}
 }
 .page__intro,
 .content__left{
@@ -421,7 +434,7 @@ p.intro__products{
 	padding: em(100px,$font-size) 5%;
 	text-align: left;
 	img{
-		width: 100%;
+		max-width: 100%;
 	}
 	h2{
 		font-family: $headline;
@@ -440,6 +453,9 @@ p.intro__products{
 	.button{
 		margin-top: 40px;
 	}
+	@media screen and (min-width: 1440px){
+		padding: em(100px,$font-size) 10%;
+	}
 }
 .content__left{
 	background-image: url('../img/tan-bg.jpg');
@@ -447,6 +463,12 @@ p.intro__products{
 		padding: 0;
 		@media screen and (min-width: 640px){
 			padding: 0 5% 0 0;
+		}
+	}
+	.detail--left{
+		padding: 0;
+		@media screen and (min-width: 640px){
+			padding: 0 5%;
 		}
 	}
 }
@@ -484,6 +506,9 @@ p.intro__products{
 .menu{
 	background-color: #dfdddb;
 	padding: em(50px,$font-size) 5%;
+	@media screen and (min-width: 1440px){
+		padding: em(50px,$font-size) 10%;
+	}
 }
 
 .menu__wrap{
@@ -507,7 +532,7 @@ p.intro__products{
 	padding: 20px;
 }
 .feature__info{
-	padding: 0 5%;
+	padding: 20px 5%;
 	h2{
 		font-family: $headline;
 		font-size: em(28px,$font-size);
@@ -524,6 +549,10 @@ p.intro__products{
 	p,li{
 		font-family: $body;
 		font-size: em(18px,$font-size);
+		color: $textColor;
+	}
+	li{
+		margin-bottom: 10px;
 	}
 	p{
 		text-align: center;
@@ -531,11 +560,12 @@ p.intro__products{
 	ul{
 		width: 200px;
 		text-align: left;
-		margin-left: 110px;
+		margin-left: 30px;
 	}
 }
 .menu__graphic{
 	img{
+		max-width: 100%;
 		margin-bottom: -40px;
 	}
 	p{
@@ -546,6 +576,33 @@ p.intro__products{
 		color: #fff;
 		padding: 10px 20px;
 		border-bottom: 3px solid $color1;
+	}
+}
+.feature__points{
+	padding: 0 0 0 60px;
+	p{
+		position: relative;
+		text-align: left;
+		&:before{
+			content: '';
+			background-color: $primaryColor;
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			left: -50px;
+			font-family: $headline;
+			font-size: em(28px,$font-size);
+			color: #fff;
+			text-align: center;
+			@include prefix(border-radius, 20px);
+			padding-top: 5px;
+		}
+	}
+	&:nth-of-type(1) p:before{
+		content: '1';
+	}
+	&:nth-of-type(2) p:before{
+		content: '2';
 	}
 }
 
