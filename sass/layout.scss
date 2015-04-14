@@ -35,7 +35,9 @@
     .grid-half {
         @include gridRow(2, 1.515151515152%);
     }
-
+    .feature__points.grid-half{
+        @include gridRow(1, 1.515151515152%);
+    }
     .grid-flow-opposite{
         float: right;
     }
@@ -53,6 +55,7 @@
         // width: 46.969696969697%;
         @include gridRow(2, 1.515151515152%);
     }
+    
     .grid-4 {
         // width: 63.636363636364%;
         @include gridRow(1.50000002, 1.515151515152%);
@@ -106,5 +109,17 @@
     .content-pad-left {
         padding-left: 4%;
     }
+    .menu__graphic.grid-2{
+        @include gridRow(1, 1.515151515152%);
+    }
+    .menu__graphic.grid-2{
+        @include gridRow(3, 1.515151515152%);
+    }
+}
+@media screen and (min-width: 1125px){
+    .feature__points.grid-half{
+        @include gridRow(2, 1.515151515152%);
+    }
+
 }
   
