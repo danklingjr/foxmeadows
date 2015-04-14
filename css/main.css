@@ -122,7 +122,7 @@ textarea {
 .row {
   clear: both; }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 380px) {
   .wrap {
     width: 98%; }
 
@@ -431,7 +431,7 @@ input {
 @media screen and (max-height: 450px) {
   body {
     font-size: 65%; } }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 350px) {
   body {
     font-size: 80%; } }
 @media screen and (min-width: 960px) {
@@ -466,10 +466,10 @@ input {
     font-size: 2.25em;
     color: #fff;
     text-align: center;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    -o-border-radius: 24px;
-    border-radius: 24px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -o-border-radius: 19px;
+    border-radius: 19px;
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
@@ -477,6 +477,9 @@ input {
     padding: 2px 0 0; }
     .social__links a:hover, .social__links a:focus {
       background-color: #3faaa5; }
+    @media screen and (max-width: 650px) {
+      .social__links a {
+        font-size: 2.25em; } }
   @media screen and (min-width: 700px) {
     .social__links {
       bottom: 10%;
@@ -611,9 +614,12 @@ input {
 ///////////////////////////////////// */
 .footer {
   background-color: #808080;
-  padding: 1.25em 5%; }
+  padding: 1.25em 2.5%; }
   .footer p {
     color: #fff; }
+  @media screen and (min-width: 650px) {
+    .footer {
+      padding: 1.25em 5%; } }
   @media screen and (min-width: 1440px) {
     .footer {
       padding: 1.25em 10%; } }
@@ -654,7 +660,7 @@ input {
 ///////////////////////////////////// */
 .home__intro {
   background-color: #fff;
-  padding: 6.25em 5%;
+  padding: 3.125em 2.5%;
   text-align: center; }
   .home__intro h1 {
     font-family: "Lora", serif;
@@ -667,6 +673,9 @@ input {
     color: #555555;
     max-width: 56.25em;
     margin: 0 auto; }
+  @media screen and (min-width: 650px) {
+    .home__intro {
+      padding: 6.25em 5%; } }
 
 p.intro__products {
   margin-bottom: 1.25em; }
@@ -684,7 +693,10 @@ p.intro__products {
 ///////////////////////////////////// */
 .more-info {
   background-image: url("../img/tan-bg.jpg");
-  padding: 3.75em 5%; }
+  padding: 1.875em 2.5%; }
+  @media screen and (min-width: 650px) {
+    .more-info {
+      padding: 3.75em 5%; } }
   @media screen and (min-width: 1440px) {
     .more-info {
       padding: 3.75em 10%; } }
@@ -721,7 +733,7 @@ p.intro__products {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 12.5em 5%; }
+  padding: 6.25em 2.5%; }
   .farm__statement h2 {
     max-width: 37.5em;
     font-family: "Lora", serif;
@@ -736,11 +748,17 @@ p.intro__products {
     color: #fff;
     text-transform: uppercase;
     margin: 0 auto; }
+  @media screen and (min-width: 1440px) {
+    .farm__statement {
+      padding: 12.5em 5%; } }
 
 /*! Contact Details
 ///////////////////////////////////// */
 .contact__details {
-  padding: 3.125em 5%; }
+  padding: 1.875em 2.5%; }
+  @media screen and (min-width: 1440px) {
+    .contact__details {
+      padding: 3.125em 5%; } }
   @media screen and (min-width: 1440px) {
     .contact__details {
       padding: 3.125em 10%; } }
@@ -759,12 +777,24 @@ p.intro__products {
     line-height: 1em; }
   .contact__right form input[type=text],
   .contact__right form input[type=email] {
+    display: block;
     font-size: 0.6875em;
     border: 2px solid #6dc9c4;
     padding: 10px;
     width: 100%;
-    max-width: 200px;
-    margin-left: 20px; }
+    margin-bottom: 10px; }
+    @media screen and (min-width: 650px) {
+      .contact__right form input[type=text],
+      .contact__right form input[type=email] {
+        max-width: 200px;
+        display: inline; } }
+    @media screen and (min-width: 908px) {
+      .contact__right form input[type=text],
+      .contact__right form input[type=email] {
+        display: inline;
+        width: 100%;
+        max-width: 200px;
+        margin-left: 20px; } }
   .contact__right form button {
     background-color: #dddddd;
     border: none;
@@ -833,6 +863,10 @@ p.intro__products {
   @media screen and (min-width: 1440px) {
     .page__intro,
     .content__left {
+      padding: 3.125em 2.5%; } }
+  @media screen and (min-width: 1440px) {
+    .page__intro,
+    .content__left {
       padding: 6.25em 10%; } }
 
 .content__left {
@@ -875,14 +909,16 @@ p.intro__products {
 ///////////////////////////////////// */
 .menu {
   background-color: #dfdddb;
-  padding: 3.125em 5%; }
+  padding: 1.875em 2.5%; }
+  @media screen and (min-width: 1440px) {
+    .menu {
+      padding: 3.125em 5%; } }
   @media screen and (min-width: 1440px) {
     .menu {
       padding: 3.125em 10%; } }
 
 .menu__wrap {
-  height: auto;
-  display: table; }
+  height: auto; }
 
 .menu__item h2 {
   font-size: 1.25em; }
@@ -891,7 +927,6 @@ p.intro__products {
       font-size: 1.75em; } }
 
 .menu__item {
-  display: table-cell;
   background-color: #fff; }
   .menu__item p {
     padding: 0 10% 40px; }
@@ -901,7 +936,7 @@ p.intro__products {
   padding: 20px; }
 
 .feature__info {
-  padding: 20px 5%; }
+  padding: 20px 2.5%; }
   .feature__info h2 {
     font-family: "Lora", serif;
     font-size: 1.375em;
@@ -932,9 +967,12 @@ p.intro__products {
     @media screen and (min-width: 1125px) {
       .feature__info ul {
         margin-left: 30px; } }
+  @media screen and (min-width: 1440px) {
+    .feature__info {
+      padding: 20px 5%; } }
 
 .menu__graphic img {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: -40px; }
 .menu__graphic p {
   display: inline-block;
